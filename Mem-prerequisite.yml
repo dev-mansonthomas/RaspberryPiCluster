@@ -1,0 +1,9 @@
+- hosts: master
+  roles:
+    - common-mem
+
+- hosts: nodes
+  roles:
+    - common-mem
+
+
