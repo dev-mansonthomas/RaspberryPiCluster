@@ -7,7 +7,7 @@
 
 - name: append cgroup mem settings in /boot/cmdline.txt
   lineinfile:
-    path: "/home/tom/boot/cmdline.txt"
+    path: "/boot/cmdline.txt"
     backrefs: yes
     regexp: "^(.*rootwait.*)$"
     line: '\1 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory'
