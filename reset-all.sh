@@ -1,2 +1,2 @@
 #!/bin/bash
-ansible-playbook -i hosts.yml -u tom -k -b Reset-all.yml
+ansible-playbook -i hosts.yml -u tom -b Reset-all.yml
